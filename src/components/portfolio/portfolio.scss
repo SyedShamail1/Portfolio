@@ -19,6 +19,8 @@
     padding: 0;
     list-style: none;
     display: flex;
+    overflow: hidden;
+  
 
     @include mobile{
       margin: 10px 0;
@@ -51,6 +53,7 @@
       position: relative;
       transition: all .5s ease;
       cursor: pointer;
+      
 
       @include mobile{
         width: 130px;
@@ -67,6 +70,7 @@
         height: 100%;
         object-fit: cover;
         z-index: 1;
+        overflow: hidden;
       }
 
       &:hover {

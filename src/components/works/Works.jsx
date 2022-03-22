@@ -6,31 +6,23 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
-      title: "Web Design",
+      icon: "./assets/globe.png",
+      title: "Web Application",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "An experienced Software Engineer / Web App Developer and currently working on SAAS application development projects. ",
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
+      icon: "./assets/mobile.png",
       title: "Mobile Application",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Besides Web App Development, I also have the ability to develop maintainable and scalable Hybrid Mobile Applications using React-Native.",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     },
-    {
-      id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
+   
   ];
 
   const handleClick = (way) => {
@@ -46,7 +38,7 @@ export default function Works() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
-          <div className="container">
+          <div className="container" key={d.id}>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
@@ -55,7 +47,7 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  
                 </div>
               </div>
               <div className="right">

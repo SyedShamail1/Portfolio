@@ -28,10 +28,10 @@
       }
 
       img {
-        height: 90%;
+        height: 100%;
 
         @include mobile{
-          height: 50%;
+          height: 70%;
         }
       }
     }
@@ -64,31 +64,12 @@
       h2 {
         font-size: 35px;
       }
-      h3 {
+     
+      span{
         font-size: 30px;
-
-        @include mobile{
-          font-size: 20px;
-        }
-
-        span {
-          font-size: inherit;
-          color: crimson;
-        }
-
-        .ityped-cursor {
-          animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            50%{
-                opacity: 1;
-            }
-            100%{
-                opacity: 0;
-            }
-        }
-      }
+        color: crimson;
+    }
+       
     }
     a {
       position: absolute;

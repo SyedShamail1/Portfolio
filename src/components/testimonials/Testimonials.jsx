@@ -4,34 +4,34 @@ export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
+      name: "Hamza Memon",
+      title: "Senior Software Developer",
       img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "https://media-exp1.licdn.com/dms/image/C4D03AQFPcvLXdE_ZMg/profile-displayphoto-shrink_400_400/0/1615121284900?e=1652918400&v=beta&t=o6suKeMfwjmB_fsDOnsU2xco-mEe5m-NtJaLL7QF-8M",
       icon: "assets/twitter.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "Hardworking, intelligent and helpful, he has come a long way and is sure to achieve greater heights..",
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
+      name: "Muhammad Areeb",
+      title: "Senior Software Engineer",
       img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "https://media-exp1.licdn.com/dms/image/C4D03AQGNbHHsbvtrtw/profile-displayphoto-shrink_400_400/0/1644897337991?e=1653523200&v=beta&t=OqUJCwWuBT_ww0fvpYz2eix7oSHRDvWEs0xd45tEg48",
       icon: "assets/youtube.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "I've worked with Shamail on many software projects and have always found him to be the reliable one. Shamail doesn't shy away from trying out new things, from studying a plethora of newer concepts and getting his hands dirty on all kinds of technologies.  ",
       featured: true,
     },
     {
       id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
+      name: "Farrukh Alvi",
+      title: "Senior Lecturer-SSUET",
       img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "https://media-exp1.licdn.com/dms/image/C4E03AQHHLf5u1VjIbw/profile-displayphoto-shrink_400_400/0/1631788186211?e=1653523200&v=beta&t=mmF6oQovpGyFW9poycDgpx6jrzVsSAE-jZbazkKgbA0",
       icon: "assets/linkedin.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+        "Shamail is a versatile and very tech savvy software engineer with a great ability to learn and pick up things fast. He has complete knowledge over the subject Matter. As his mentor and teacher I fully recommend him",
     },
   ];
   return (
@@ -39,7 +39,7 @@ export default function Testimonials() {
       <h1>Testimonials</h1>
       <div className="container">
         {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"}>
+          <div className={d.featured ? "card featured" : "card"} key={d.id}>
             <div className="top">
               <img src="assets/right-arrow.png" className="left" alt="" />
               <img
